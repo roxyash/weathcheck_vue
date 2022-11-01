@@ -10,8 +10,8 @@
             <div id="weather" class="weahter">
                 <h1 class="title">Weather info</h1>
                 <span class="temp">Temp:<span class="temp_info">{{ info.temp }}</span></span>
-                <span class="town">Town:<span class="town_info">Moscow</span></span>
-                <span class="weather_info">Sunny</span>
+                <span class="town">Town:<span class="town_info">{{ info.region }}</span></span>
+                <span class="weather_info">{{ info.weather }}</span>
                 <img class="weather_info_photo" src="images/sun.png" alt="">
             </div>
         </div>
@@ -29,8 +29,7 @@ export default {
       info: {
         temp: '',
         weather: '',
-        region: '',
-        error: ''
+        region: ''
       },
       formData: {
         address: ''
