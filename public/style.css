@@ -113,15 +113,15 @@ form {
 .weather_info_photo{
     position: absolute;
     width: 150px;
-    height: 150px;
-    margin-top: 250px;
+    height: 90px;
+    margin-top: 270px;
     margin-left: 100px;
 }
 
 .weather_info{
     position: absolute;
     margin-top: 300px;
-    margin-left: 250px;
+    margin-left: 270px;
 }
 
 .temp{
