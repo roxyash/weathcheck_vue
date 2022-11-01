@@ -28,8 +28,8 @@ export default {
     return {
       info: {
         temp: '',
-        weather: '',
-        region: ''
+        town: '',
+        weather: ''
       },
       formData: {
         address: ''
@@ -40,7 +40,10 @@ export default {
     SearchMethod () {
       axios.get('http://localhost:8000/getweatherinfo/', {
         params: { address: this.formData.address }
-      }).then(response => (this.info = response)).catch(error => console.log(error)).then(response => (console.log(response)))
+      }).then(response => {
+        this.info = response.data
+      })
+        .catch(error => console.log(error))
     }
   }
 
